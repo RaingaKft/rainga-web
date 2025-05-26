@@ -5,89 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rainga Kft – Tetőbox Bérlés</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Raleway', sans-serif; }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <!-- Fejléc -->
   <header class="bg-white shadow-md p-4 sticky top-0 z-50">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-600">Rainga Kft</h1>
-      <nav class="space-x-4">
-        <a href="#rolunk" class="hover:text-blue-600">Rólunk</a>
-        <a href="#arak" class="hover:text-blue-600">Árak</a>
-        <a href="#foglalas" class="hover:text-blue-600">Foglalás</a>
-        <a href="#kapcsolat" class="hover:text-blue-600">Kapcsolat</a>
+      <h1 class="text-3xl font-extrabold text-blue-700">Rainga Kft</h1>
+      <nav class="space-x-4 text-lg">
+        <a href="#rolunk" class="hover:text-blue-600 transition">Rólunk</a>
+        <a href="#arak" class="hover:text-blue-600 transition">Árak</a>
+        <a href="#foglalas" class="hover:text-blue-600 transition">Foglalás</a>
+        <a href="#kapcsolat" class="hover:text-blue-600 transition">Kapcsolat</a>
       </nav>
     </div>
   </header>
 
   <!-- Fő szekció -->
-  <section class="bg-blue-100 text-center py-20">
-    <h2 class="text-4xl font-bold mb-4">Tetőbox bérlés gyorsan és egyszerűen</h2>
-    <p class="text-lg mb-6">Utazz kényelmesen, csomagjaidnak is legyen hely!</p>
-    <a href="#foglalas" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Foglalj most</a>
+  <section class="bg-blue-100 text-center py-24 px-4 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600195077073-7c814b4a2bb7?auto=format&fit=crop&w=1950&q=80');">
+    <div class="bg-blue-900 bg-opacity-60 p-8 rounded-xl">
+      <h2 class="text-5xl font-extrabold mb-6 text-white">Tetőbox bérlés gyorsan és egyszerűen</h2>
+      <p class="text-xl mb-8 text-blue-100">Utazz kényelmesen – csomagjaidnak is legyen hely!</p>
+      <a href="#foglalas" class="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-4 rounded-full text-lg shadow-lg hover:from-blue-600 hover:to-blue-800 transition">Foglalj most</a>
+    </div>
   </section>
 
   <!-- Rólunk -->
-  <section id="rolunk" class="py-16 max-w-4xl mx-auto px-4">
-    <h3 class="text-3xl font-semibold mb-4 text-center">Miért válassz minket?</h3>
-    <p class="text-gray-700 text-center">A Rainga Kft megbízható, tiszta, rendszeresen karbantartott tetőboxokat kínál rövid és hosszú távra is, elérhető áron. Tapasztalt csapatunk segít a felszerelésben is!</p>
+  <section id="rolunk" class="py-20 max-w-5xl mx-auto px-4">
+    <h3 class="text-4xl font-bold mb-6 text-center text-blue-800">Miért válassz minket?</h3>
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <img src="https://images.unsplash.com/photo-1525104698733-6b5c6a8ddc36?auto=format&fit=crop&w=800&q=60" alt="Autó tetőboxszal" class="rounded-xl shadow-lg">
+      <p class="text-lg text-gray-700 leading-relaxed">A Rainga Kft megbízható, tiszta, rendszeresen karbantartott tetőboxokat kínál rövid és hosszú távra is, elérhető áron. Tapasztalt csapatunk segít a felszerelésben is!</p>
+    </div>
   </section>
 
   <!-- Árak -->
-  <section id="arak" class="bg-gray-100 py-16">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-3xl font-semibold mb-8 text-center">Áraink</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h4 class="text-xl font-bold mb-2">1-3 nap</h4>
-          <p class="text-blue-600 text-2xl font-bold">4 000 Ft/nap</p>
+  <section id="arak" class="bg-gray-100 py-20">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-4xl font-bold mb-10 text-center text-blue-800">Áraink</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+          <img src="https://images.unsplash.com/photo-1607161804823-e6d0f8b545e0?auto=format&fit=crop&w=500&q=60" alt="1-3 nap" class="rounded mb-4 w-full h-40 object-cover">
+          <h4 class="text-2xl font-bold mb-2 text-blue-700">1-3 nap</h4>
+          <p class="text-blue-600 text-3xl font-extrabold">4 000 Ft/nap</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h4 class="text-xl font-bold mb-2">4-7 nap</h4>
-          <p class="text-blue-600 text-2xl font-bold">3 500 Ft/nap</p>
+        <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+          <img src="https://images.unsplash.com/photo-1534705867305-38ec1dd04c09?auto=format&fit=crop&w=500&q=60" alt="4-7 nap" class="rounded mb-4 w-full h-40 object-cover">
+          <h4 class="text-2xl font-bold mb-2 text-blue-700">4-7 nap</h4>
+          <p class="text-blue-600 text-3xl font-extrabold">3 500 Ft/nap</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h4 class="text-xl font-bold mb-2">8+ nap</h4>
-          <p class="text-blue-600 text-2xl font-bold">3 000 Ft/nap</p>
+        <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
+          <img src="https://images.unsplash.com/photo-1586864383741-bf29b7e0d0d2?auto=format&fit=crop&w=500&q=60" alt="8+ nap" class="rounded mb-4 w-full h-40 object-cover">
+          <h4 class="text-2xl font-bold mb-2 text-blue-700">8+ nap</h4>
+          <p class="text-blue-600 text-3xl font-extrabold">3 000 Ft/nap</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Foglalás -->
-  <section id="foglalas" class="py-16 max-w-4xl mx-auto px-4">
-    <h3 class="text-3xl font-semibold mb-6 text-center">Foglalás</h3>
-    <form class="grid gap-4">
-      <input type="text" placeholder="Teljes név" class="border p-3 rounded" required />
-      <input type="email" placeholder="Email cím" class="border p-3 rounded" required />
-      <input type="tel" placeholder="Telefonszám" class="border p-3 rounded" required />
-      <label class="block">Bérlés kezdete:<input type="date" class="border p-3 rounded mt-1 w-full" required /></label>
-      <label class="block">Bérlés vége:<input type="date" class="border p-3 rounded mt-1 w-full" required /></label>
-      <textarea placeholder="Megjegyzés (opcionális)" rows="3" class="border p-3 rounded"></textarea>
-      <button type="submit" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Foglalás elküldése</button>
+  <section id="foglalas" class="py-20 max-w-4xl mx-auto px-4">
+    <h3 class="text-4xl font-bold mb-8 text-center text-blue-800">Foglalás</h3>
+    <form class="grid gap-4 bg-white p-8 rounded-2xl shadow-xl">
+      <input type="text" placeholder="Teljes név" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+      <input type="email" placeholder="Email cím" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+      <input type="tel" placeholder="Telefonszám" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+      <label class="block">Bérlés kezdete:<input type="date" class="border border-gray-300 p-3 rounded mt-1 w-full focus:outline-none focus:ring-2 focus:ring-blue-400" required /></label>
+      <label class="block">Bérlés vége:<input type="date" class="border border-gray-300 p-3 rounded mt-1 w-full focus:outline-none focus:ring-2 focus:ring-blue-400" required /></label>
+      <textarea placeholder="Megjegyzés (opcionális)" rows="3" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+      <button type="submit" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Foglalás elküldése</button>
     </form>
-    <p class="text-center mt-4 text-sm text-gray-600">A foglalás beérkezése után 24 órán belül felvesszük Önnel a kapcsolatot.</p>
+    <p class="text-center mt-6 text-sm text-gray-600">A foglalás beérkezése után 24 órán belül felvesszük Önnel a kapcsolatot.</p>
   </section>
 
   <!-- Kapcsolat -->
-  <section id="kapcsolat" class="py-16 max-w-4xl mx-auto px-4">
-    <h3 class="text-3xl font-semibold mb-6 text-center">Kapcsolat</h3>
-    <form class="grid gap-4">
-      <input type="text" placeholder="Név" class="border p-3 rounded" required />
-      <input type="email" placeholder="Email" class="border p-3 rounded" required />
-      <textarea placeholder="Üzenet" rows="4" class="border p-3 rounded" required></textarea>
-      <button type="submit" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Küldés</button>
+  <section id="kapcsolat" class="py-20 max-w-4xl mx-auto px-4">
+    <h3 class="text-4xl font-bold mb-8 text-center text-blue-800">Kapcsolat</h3>
+    <form class="grid gap-4 bg-white p-8 rounded-2xl shadow-xl">
+      <input type="text" placeholder="Név" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+      <input type="email" placeholder="Email" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required />
+      <textarea placeholder="Üzenet" rows="4" class="border border-gray-300 p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Küldés</button>
     </form>
-    <div class="text-center mt-8">
-      <p>Telefon: <a href="tel:+36201234567" class="text-blue-600">+36 20 123 4567</a></p>
-      <p>Email: <a href="mailto:info@raingakft.hu" class="text-blue-600">info@raingakft.hu</a></p>
+    <div class="text-center mt-8 text-lg">
+      <p>Telefon: <a href="tel:+36201234567" class="text-blue-600 hover:underline">+36 20 123 4567</a></p>
+      <p>Email: <a href="mailto:info@raingakft.hu" class="text-blue-600 hover:underline">info@raingakft.hu</a></p>
     </div>
   </section>
 
   <!-- Lábjegyzet -->
   <footer class="bg-white text-center py-6 mt-10 border-t">
-    <p>&copy; 2025 Rainga Kft – Minden jog fenntartva.</p>
+    <p class="text-gray-600">&copy; 2025 Rainga Kft – Minden jog fenntartva.</p>
   </footer>
+
   <script>
   document.querySelector('#foglalas form').addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -116,6 +129,6 @@
       alert("Sajnáljuk, nincs elérhető tetőbox a megadott időszakban.");
     }
   });
-</script>
+  </script>
 </body>
 </html>
