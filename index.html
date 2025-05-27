@@ -67,10 +67,33 @@
   <!-- Áraink -->
   <section id="araink" class="py-20 max-w-4xl mx-auto px-4">
     <h3 class="text-4xl font-bold mb-10 text-center text-yellow-700">Áraink</h3>
-    <div class="text-lg text-center space-y-4">
-      <p><strong>1-3 nap:</strong> 6000 Ft / nap</p>
-      <p><strong>4-7 nap:</strong> 5500 Ft / nap</p>
-      <p><strong>8+ nap:</strong> 5000 Ft / nap</p>
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-center border border-gray-300">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-4 py-2 border border-gray-300">Időtartam</th>
+            <th class="px-4 py-2 border border-gray-300">Motion L</th>
+            <th class="px-4 py-2 border border-gray-300">Motion XL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="px-4 py-2 border border-gray-300">1-3 nap</td>
+            <td class="px-4 py-2 border border-gray-300">6000 Ft/nap</td>
+            <td class="px-4 py-2 border border-gray-300">6500 Ft/nap</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-4 py-2 border border-gray-300">4-7 nap</td>
+            <td class="px-4 py-2 border border-gray-300">5500 Ft/nap</td>
+            <td class="px-4 py-2 border border-gray-300">6000 Ft/nap</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border border-gray-300">8+ nap</td>
+            <td class="px-4 py-2 border border-gray-300">5000 Ft/nap</td>
+            <td class="px-4 py-2 border border-gray-300">5500 Ft/nap</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -112,25 +135,27 @@
 
       const startDate = new Date(this.start.value);
       const endDate = new Date(this.end.value);
+      const boxSize = this.boxSize.value;
 
-      if (isNaN(startDate) || isNaN(endDate) || endDate <= startDate) {
-        alert("Kérlek adj meg érvényes dátumokat!");
+      if (isNaN(startDate) || isNaN(endDate) || endDate <= startDate || !boxSize) {
+        alert("Kérlek adj meg érvényes adatokat!");
         return;
       }
 
       const days = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
       let dailyRate;
 
-      if (days <= 3) {
-        dailyRate = 6000;
-      } else if (days <= 7) {
-        dailyRate = 5500;
-      } else {
-        dailyRate = 5000;
+      if (boxSize === "L") {
+        if (days <= 3) dailyRate = 6000;
+        else if (days <= 7) dailyRate = 5500;
+        else dailyRate = 5000;
+      } else if (boxSize === "XL") {
+        if (days <= 3) dailyRate = 6500;
+        else if (days <= 7) dailyRate = 6000;
+        else dailyRate = 5500;
       }
 
       const total = days * dailyRate;
-
       alert(`A bérlés teljes díja: ${total.toLocaleString()} Ft (${days} napra, ${dailyRate} Ft/nap)`);
     });
   </script>
