@@ -17,7 +17,7 @@
       <h1 class="text-3xl font-extrabold text-yellow-600">Rainga Kft</h1>
       <nav class="space-x-4 text-lg">
         <a href="#rolunk" class="hover:text-yellow-600 transition">Rólunk</a>
-        <a href="#arak" class="hover:text-yellow-600 transition">Árak</a>
+        <a href="#termekek" class="hover:text-yellow-600 transition">Termékeink</a>
         <a href="#foglalas" class="hover:text-yellow-600 transition">Foglalás</a>
         <a href="#kapcsolat" class="hover:text-yellow-600 transition">Kapcsolat</a>
       </nav>
@@ -40,27 +40,25 @@
       <img src="images/thule1.jpg" alt="Thule tetőbox oldalnézet" class="rounded-xl shadow-lg">
       <p class="text-lg text-gray-700 leading-relaxed">A Rainga Kft megbízható, tiszta, rendszeresen karbantartott tetőboxokat kínál rövid és hosszú távra is, elérhető áron. Tapasztalt csapatunk segít a felszerelésben is!</p>
     </div>
+    <div class="mt-8 flex justify-center">
+      <img src="images/car1.jpg" alt="Thule tetőbox illusztráció" class="rounded-xl shadow-lg w-full max-w-md">
+    </div>
   </section>
 
-  <!-- Árak -->
-  <section id="arak" class="bg-gray-100 py-20">
+  <!-- Bérelhető termékeink -->
+  <section id="termekek" class="bg-gray-100 py-20">
     <div class="max-w-5xl mx-auto px-4">
-      <h3 class="text-4xl font-bold mb-10 text-center text-yellow-700">Áraink</h3>
-      <div class="grid md:grid-cols-3 gap-8">
+      <h3 class="text-4xl font-bold mb-10 text-center text-yellow-700">Bérelhető termékeink</h3>
+      <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
-          <img src="images/car1.jpg" alt="Thule tetőbox rövid távra" class="rounded mb-4 w-full h-40 object-cover">
-          <h4 class="text-2xl font-bold mb-2 text-yellow-600">1-3 nap</h4>
-          <p class="text-yellow-500 text-3xl font-extrabold">4 000 Ft/nap</p>
+          <img src="images/thule force XT.jpg" alt="Thule Motion L" class="rounded mb-4 w-full h-40 object-cover">
+          <h4 class="text-2xl font-bold mb-2 text-yellow-600">Thule Motion L tetőbox</h4>
+          <p class="text-yellow-500 text-xl">Praktikus választás rövid vagy közepes utazásokhoz. Tágas, de könnyen kezelhető.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
-          <img src="images/thule force XT.jpg" alt="Thule tetőbox közepes távra" class="rounded mb-4 w-full h-40 object-cover">
-          <h4 class="text-2xl font-bold mb-2 text-yellow-600">4-7 nap</h4>
-          <p class="text-yellow-500 text-3xl font-extrabold">3 500 Ft/nap</p>
-        </div>
-        <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition">
-          <img src="images/thule4.jpg" alt="Thule tetőbox hosszú távra" class="rounded mb-4 w-full h-40 object-cover">
-          <h4 class="text-2xl font-bold mb-2 text-yellow-600">8+ nap</h4>
-          <p class="text-yellow-500 text-3xl font-extrabold">3 000 Ft/nap</p>
+          <img src="images/car1.jpg" alt="Thule Motion XL" class="rounded mb-4 w-full h-40 object-cover">
+          <h4 class="text-2xl font-bold mb-2 text-yellow-600">Thule Motion XL tetőbox</h4>
+          <p class="text-yellow-500 text-xl">Ideális családi utazásokhoz vagy hosszabb utakhoz. Extra nagy kapacitás.</p>
         </div>
       </div>
     </div>
@@ -68,14 +66,15 @@
 
   <!-- Foglalás -->
   <section id="foglalas" class="py-20 max-w-3xl mx-auto px-4">
-    <h3 class="text-4xl font-bold mb-6 text-center text-yellow-700">Foglalás</h3>
-    <form id="bookingForm" class="bg-white p-8 rounded-xl shadow-md space-y-6">
-      <input type="text" name="nev" placeholder="Név" required class="w-full border border-gray-300 p-3 rounded">
-      <input type="email" name="email" placeholder="Email cím" required class="w-full border border-gray-300 p-3 rounded">
-      <input type="tel" name="telefon" placeholder="Telefonszám" required class="w-full border border-gray-300 p-3 rounded">
-      <input type="date" name="mettol" placeholder="Bérlés kezdete" required class="w-full border border-gray-300 p-3 rounded">
-      <input type="date" name="meddig" placeholder="Bérlés vége" required class="w-full border border-gray-300 p-3 rounded">
-      <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded w-full">Foglalás elküldése</button>
+    <h3 class="text-3xl font-bold mb-6 text-center text-yellow-700">Foglalás</h3>
+    <form id="bookingForm" class="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+      <input type="text" name="name" placeholder="Név" required class="w-full border p-3 rounded" />
+      <input type="email" name="email" placeholder="Email" required class="w-full border p-3 rounded" />
+      <input type="tel" name="phone" placeholder="Telefonszám" required class="w-full border p-3 rounded" />
+      <input type="date" name="start" placeholder="Kezdés dátuma" required class="w-full border p-3 rounded" />
+      <input type="date" name="end" placeholder="Visszahozatal dátuma" required class="w-full border p-3 rounded" />
+      <textarea name="message" placeholder="Megjegyzés (opcionális)" class="w-full border p-3 rounded"></textarea>
+      <button type="submit" class="w-full bg-yellow-600 text-white p-3 rounded hover:bg-yellow-700">Foglalás elküldése</button>
     </form>
   </section>
 
@@ -91,27 +90,5 @@
   <footer class="text-center py-4 text-sm text-gray-500">
     &copy; 2025 Rainga Kft. Minden jog fenntartva.
   </footer>
-
-  <script>
-    document.getElementById('bookingForm').addEventListener('submit', async function (e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbynsw45PEWnLfaDi2ibvHyNsJLwRibk4xhuvFk3vd-7cskwM6oU4cq9ANfSn0ccIWtV/exec', {
-          method: 'POST',
-          body: formData
-        });
-        if (response.ok) {
-          alert('Foglalás elküldve!');
-          this.reset();
-        } else {
-          alert('Hiba történt a küldés során.');
-        }
-      } catch (error) {
-        alert('Nem sikerült elküldeni a foglalást.');
-        console.error(error);
-      }
-    });
-  </script>
 </body>
 </html>
