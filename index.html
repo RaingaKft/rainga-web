@@ -83,6 +83,11 @@
       <input type="tel" name="phone" placeholder="Telefonszám" required class="w-full border p-3 rounded" />
       <input type="date" name="start" placeholder="Kezdés dátuma" required class="w-full border p-3 rounded" />
       <input type="date" name="end" placeholder="Visszahozatal dátuma" required class="w-full border p-3 rounded" />
+      <select name="boxSize" required class="w-full border p-3 rounded">
+        <option value="">Válassz méretet</option>
+        <option value="L">Thule Motion L</option>
+        <option value="XL">Thule Motion XL</option>
+      </select>
       <textarea name="message" placeholder="Megjegyzés (opcionális)" class="w-full border p-3 rounded"></textarea>
       <button type="submit" class="w-full bg-yellow-600 text-white p-3 rounded hover:bg-yellow-700">Foglalás elküldése</button>
     </form>
