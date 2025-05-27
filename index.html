@@ -105,5 +105,34 @@
   <footer class="text-center py-4 text-sm text-gray-500">
     &copy; 2025 Rainga Kft. Minden jog fenntartva.
   </footer>
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const startDate = new Date(this.start.value);
+      const endDate = new Date(this.end.value);
+
+      if (isNaN(startDate) || isNaN(endDate) || endDate <= startDate) {
+        alert("Kérlek adj meg érvényes dátumokat!");
+        return;
+      }
+
+      const days = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+      let dailyRate;
+
+      if (days <= 3) {
+        dailyRate = 6000;
+      } else if (days <= 7) {
+        dailyRate = 5500;
+      } else {
+        dailyRate = 5000;
+      }
+
+      const total = days * dailyRate;
+
+      alert(`A bérlés teljes díja: ${total.toLocaleString()} Ft (${days} napra, ${dailyRate} Ft/nap)`);
+    });
+  </script>
 </body>
 </html>
